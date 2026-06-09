@@ -1,0 +1,98 @@
+export const fruitsData = [
+  {
+    id: crypto.randomUUID(),
+    fruitType: "🥝",
+    isOpen: false,
+    isMatched: false,
+  },
+  {
+    id: crypto.randomUUID(),
+    fruitType: "🍎",
+    isOpen: false,
+    isMatched: false,
+  },
+  {
+    id: crypto.randomUUID(),
+    fruitType: "🍊",
+    isOpen: false,
+    isMatched: false,
+  },
+  {
+    id: crypto.randomUUID(),
+    fruitType: "🍌",
+    isOpen: false,
+    isMatched: false,
+  },
+  {
+    id: crypto.randomUUID(),
+    fruitType: "🍇",
+    isOpen: false,
+    isMatched: false,
+  },
+  {
+    id: crypto.randomUUID(),
+    fruitType: "🍑",
+    isOpen: false,
+    isMatched: false,
+  },
+  {
+    id: crypto.randomUUID(),
+    fruitType: "🍌",
+    isOpen: false,
+    isMatched: false,
+  },
+  {
+    id: crypto.randomUUID(),
+    fruitType: "🍓",
+    isOpen: false,
+    isMatched: false,
+  },
+  {
+    id: crypto.randomUUID(),
+    fruitType: "🍑",
+    isOpen: false,
+    isMatched: false,
+  },
+  {
+    id: crypto.randomUUID(),
+    fruitType: "🍒",
+    isOpen: false,
+    isMatched: false,
+  },
+  {
+    id: crypto.randomUUID(),
+    fruitType: "🥝",
+    isOpen: false,
+    isMatched: false,
+  },
+  {
+    id: crypto.randomUUID(),
+    fruitType: "🍎",
+    isOpen: false,
+    isMatched: false,
+  },
+  {
+    id: crypto.randomUUID(),
+    fruitType: "🍊",
+    isOpen: false,
+    isMatched: false,
+  },
+  {
+    id: crypto.randomUUID(),
+    fruitType: "🍇",
+    isOpen: false,
+    isMatched: false,
+  },
+  {
+    id: crypto.randomUUID(),
+    fruitType: "🍓",
+    isOpen: false,
+    isMatched: false,
+  },
+  {
+    id: crypto.randomUUID(),
+    fruitType: "🍒",
+    isOpen: false,
+    isMatched: false,
+  },
+];

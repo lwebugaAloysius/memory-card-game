@@ -1,0 +1,160 @@
+.main-app-container {
+  max-inline-size: 600px;
+  margin-inline: auto;
+  display: grid;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.main-app-container > * {
+  min-width: 0;
+}
+
+.header {
+  background-color: var(--blue-900);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 20px;
+  border: 1px solid var(--neutral-800);
+  width: 100%;
+}
+.game-title {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.score-moves-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.score-container,
+.moves-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--neutral-700);
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.score-value,
+.moves-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--blue-700);
+}
+
+.new-game-btn {
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 900;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    90deg,
+    var(--blue-grad-600),
+    var(--blue-grad-500)
+  );
+  color: var(--neutral-600);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.new-game-btn:hover {
+  transform: translateY(-4px);
+}
+/* ------------------------------------------------------------------------------------- */
+
+.message-container {
+  background-color: var(--blue-900);
+  padding: 1.5rem 2.5rem;
+  justify-self: center;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid var(--neutral-800);
+
+  p {
+    color: var(--neutral-700);
+  }
+}
+/* ------------------------------------------------------------------------------------------ */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 495px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* ---------------------------------------------------------------------------------------------- */
+
+.card-tile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  padding: 1rem;
+  background-color: var(--neutral-800);
+  border-radius: 10px;
+  border: 2px solid rgba(154, 155, 163, 0.2);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.card-tile.has-matched {
+  background-color: var(--accent-green-800);
+  border: 2px solid var(--accent-green-900);
+
+  box-shadow:
+    0 0 8px var(--accent-green-900),
+    0 0 70px var(--accent-green-800);
+}
+
+.card-tile:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .card-tile {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-tile {
+    font-size: 2.5rem;
+  }
+}
+
+.card-tile-cover {
+  font-size: 2.5rem;
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue-900);
+  border-radius: 10px;
+  opacity: 0.5;
+  transition: all 200ms ease-in-out;
+}
+
+.card-tile-cover.off {
+  opacity: 0;
+}
